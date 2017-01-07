@@ -1,7 +1,109 @@
+/* https://github.com/jonathantneal/system-font-css */
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local('.SFNSText-Light'), local('.HelveticaNeueDeskInterface-Light'), local('.LucidaGrandeUI'), local('Ubuntu Light'), local('Segoe UI Light'), local('Roboto-Light'), local('DroidSans'), local('Tahoma');
+}
+
+@font-face {
+  font-family: system;
+  font-style: italic;
+  font-weight: 300;
+  src: local('.SFNSText-LightItalic'), local('.HelveticaNeueDeskInterface-Italic'), local('.LucidaGrandeUI'), local('Ubuntu Light Italic'), local('Segoe UI Light Italic'), local('Roboto-LightItalic'), local('DroidSans'), local('Tahoma');
+}
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 400;
+  src: local('.SFNSText-Regular'), local('.HelveticaNeueDeskInterface-Regular'), local('.LucidaGrandeUI'), local('Ubuntu'), local('Segoe UI'), local('Roboto-Regular'), local('DroidSans'), local('Tahoma');
+}
+
+@font-face {
+  font-family: system;
+  font-style: italic;
+  font-weight: 400;
+  src: local('.SFNSText-Italic'), local('.HelveticaNeueDeskInterface-Italic'), local('.LucidaGrandeUI'), local('Ubuntu Italic'), local('Segoe UI Italic'), local('Roboto-Italic'), local('DroidSans'), local('Tahoma');
+}
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 500;
+  src: local('.SFNSText-Medium'), local('.HelveticaNeueDeskInterface-MediumP4'), local('.LucidaGrandeUI'), local('Ubuntu Medium'), local('Segoe UI Semibold'), local('Roboto-Medium'), local('DroidSans-Bold'), local('Tahoma Bold');
+}
+
+@font-face {
+  font-family: system;
+  font-style: italic;
+  font-weight: 500;
+  src: local('.SFNSText-MediumItalic'), local('.HelveticaNeueDeskInterface-MediumItalicP4'), local('.LucidaGrandeUI'), local('Ubuntu Medium Italic'), local('Segoe UI Semibold Italic'), local('Roboto-MediumItalic'), local('DroidSans-Bold'), local('Tahoma Bold');
+}
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 700;
+  src: local('.SFNSText-Bold'), local('.HelveticaNeueDeskInterface-Bold'), local('.LucidaGrandeUI'), local('Ubuntu Bold'), local('Roboto-Bold'), local('DroidSans-Bold'), local('Segoe UI Bold'), local('Tahoma Bold');
+}
+
+@font-face {
+  font-family: system;
+  font-style: italic;
+  font-weight: 700;
+  src: local('.SFNSText-BoldItalic'), local('.HelveticaNeueDeskInterface-BoldItalic'), local('.LucidaGrandeUI'), local('Ubuntu Bold Italic'), local('Roboto-BoldItalic'), local('DroidSans-Bold'), local('Segoe UI Bold Italic'), local('Tahoma Bold');
+}
+
+/* https://www.checkmyworkinag.com/cm-web-fonts */
+@font-face {
+  font-family: 'Computer Modern Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/cmunss.eot');
+  src: url('fonts/cmunss.eot?#iefix') format('embedded-opentype'),
+       url('fonts/cmunss.woff') format('woff'),
+       url('fonts/cmunss.ttf') format('truetype'),
+       url('fonts/cmunss.svg#cmunss') format('svg');
+}
+
+@font-face {
+  font-family: 'Computer Modern Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/cmunsx.eot');
+  src: url('fonts/cmunsx.eot?#iefix') format('embedded-opentype'),
+       url('fonts/cmunsx.woff') format('woff'),
+       url('fonts/cmunsx.ttf') format('truetype'),
+       url('fonts/cmunsx.svg#cmunsx') format('svg');
+}
+
+@font-face {
+  font-family: 'Computer Modern Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: url('fonts/cmunsi.eot');
+  src: url('fonts/cmunsi.eot?#iefix') format('embedded-opentype'),
+       url('fonts/cmunsi.woff') format('woff'),
+       url('fonts/cmunsi.ttf') format('truetype'),
+       url('fonts/cmunsi.svg#cmunsi') format('svg');
+}
+
+@font-face {
+  font-family: 'Computer Modern Sans';
+  font-style: italic;
+  font-weight: bold;
+  src: url('fonts/cmunso.eot');
+  src: url('fonts/cmunso.eot?#iefix') format('embedded-opentype'),
+       url('fonts/cmunso.woff') format('woff'),
+       url('fonts/cmunso.ttf') format('truetype'),
+       url('fonts/cmunso.svg#cmunso') format('svg');
+}
+
 html {
   background: #000;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Computer Modern Sans', system;
   font-size: 125%;
   line-height: 1.5;
 }
@@ -23,20 +125,6 @@ h1 {
   h1 {
     padding-right: 0;
   }
-}
-
-.details-switch {
-  background: #000;
-  border: 1px solid #fff;
-  border-radius: 1px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 0.6rem;
-  line-height: 1;
-  padding: 0.3em 0.6em;
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
 }
 
 h2 {
@@ -61,6 +149,30 @@ summary {
 ul {
   margin: 0 0 1rem;
   padding: 0 0 0 1.2em;
+}
+
+var {
+  font-family: serif;
+  font-style: italic;
+}
+
+.details-switch {
+  background: #000;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system;
+  font-size: 0.6rem;
+  line-height: 1;
+  padding: 0.3em 0.6em;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.equation {
+  font-family: serif;
 }
 
 @media print {
