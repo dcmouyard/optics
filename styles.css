@@ -152,7 +152,7 @@ ul {
 }
 
 var {
-  font-family: serif;
+  font-family: 'Libre Baskerville', Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
   font-style: italic;
 }
 
@@ -172,7 +172,7 @@ var {
 }
 
 .equation {
-  font-family: serif;
+  font-family: 'Libre Baskerville', Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
 }
 
 @media print {
