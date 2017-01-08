@@ -151,6 +151,26 @@ ul {
   padding: 0 0 0 1.2em;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 0 1rem;
+}
+
+td {
+  padding: 0.5rem;
+  border: 1px solid #999;
+  border-width: 1px 0;
+}
+
+td:first-child {
+  padding-left: 1rem;
+}
+
+td:last-child {
+  padding-right: 1rem;
+}
+
 var {
   font-family: 'Libre Baskerville', Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
   font-style: italic;
